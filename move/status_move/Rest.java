@@ -10,10 +10,10 @@ public class Rest extends StatusMove {
 
     protected void applySelfEffects(Pokemon p) {
         Effect eff = new Effect();
-        eff.turns(1000);
+        eff.turns(2);
         eff.condition(Status.SLEEP);
         p.setCondition(eff);
-        p.setStats(0, 0, 0, 0, 0, 0);
+        p.restore();
     }
 
     @Override 
