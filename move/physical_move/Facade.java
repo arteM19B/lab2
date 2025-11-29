@@ -13,8 +13,7 @@ public class Facade extends PhysicalMove {
     protected double calcBaseDamage(Pokemon att, Pokemon def) {
         double baseDamage = super.calcBaseDamage(att, def);
         Status cond = att.getCondition();
-        super.calcBaseDamage(att, def);
-        if (cond.equals(BURN) || cond.equals(POISON) || cond.equals(PARALYZE)) {
+        if (cond == BURN || cond == POISON || cond == PARALYZE) {
             return baseDamage * 2;
         }
         return baseDamage;
