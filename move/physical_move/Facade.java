@@ -15,10 +15,8 @@ public class Facade extends PhysicalMove {
         Status cond = att.getCondition();
         super.calcBaseDamage(att, def);
         if (cond.equals(BURN) || cond.equals(POISON) || cond.equals(PARALYZE)) {
-            System.out.println("damage received from: " + def.toString());
             return baseDamage * 2;
         }
-        System.out.println("damage received from: " + def.toString());
         return baseDamage;
     }
 
