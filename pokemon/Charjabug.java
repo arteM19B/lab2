@@ -7,7 +7,6 @@ import move.physical_move.*;
 import move.status_move.*;
 
 public class Charjabug extends Grubbin {
-
     public Charjabug(String name, int level) {
         super(name, level);
         addType(Type.ELECTRIC);

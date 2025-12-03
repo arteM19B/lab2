@@ -13,10 +13,17 @@ public class Facade extends PhysicalMove {
     protected double calcBaseDamage(Pokemon att, Pokemon def) {
         double baseDamage = super.calcBaseDamage(att, def);
         Status cond = att.getCondition();
-        if (cond == BURN || cond == POISON || cond == PARALYZE) {
+        if (cond.equals(BURN) || cond.equals(POISON) || cond.equals(PARALYZE)) {
             return baseDamage * 2;
         }
         return baseDamage;
+    }
+
+    // должно быть в Status
+    @Override
+    public boolean equals(Object obj) {      
+        Status status = (Status) obj;
+        return Objects.equals(field, status.field);
     }
 
     @Override
