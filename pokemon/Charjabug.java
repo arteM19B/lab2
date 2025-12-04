@@ -10,7 +10,7 @@ public class Charjabug extends Grubbin {
     public Charjabug(String name, int level) {
         super(name, level);
         addType(Type.ELECTRIC);
-        setStats(-100, 82, 95, 55, 75, 36);
+        setStats(100, 82, 95, 55, 75, 36);
         addMove(new IronDefense());
     }
 }
