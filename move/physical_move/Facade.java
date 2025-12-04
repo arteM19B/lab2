@@ -20,11 +20,11 @@ public class Facade extends PhysicalMove {
     }
 
     // должно быть в Status
-    @Override
-    public boolean equals(Object obj) {      
-        Status status = (Status) obj;
-        return Objects.equals(field, status.field);
-    }
+    // @Override
+    // public boolean equals(Object obj) {      
+    //     Status status = (Status) obj;
+    //     return Objects.equals(field, status.field);
+    // }
 
     @Override
     protected String describe() {
