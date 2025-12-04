@@ -14,7 +14,6 @@ public class IceBeam extends SpecialMove {
     protected void applyOppEffects(Pokemon p) {
         if (Math.random() < 0.1) {
             Effect.freeze(p);
-            System.out.println("damage received from: " + p.toString());
         }
     }
 

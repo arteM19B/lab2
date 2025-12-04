@@ -10,7 +10,6 @@ public class Swagger extends StatusMove {
 
     protected void applyOppEffects(Pokemon p) {
         Effect.confuse(p);
-        System.out.println("damage received from: " + p.toString());
         p.setMod(Stat.ATTACK, 2);
     }
 

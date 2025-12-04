@@ -10,7 +10,6 @@ public class MudSlap extends SpecialMove {
 
     protected void applyOppEffects(Pokemon p) {
         p.setMod(Stat.ACCURACY, -1);
-        System.out.println("damage received from" + p.toString());
     }
 
     @Override 
